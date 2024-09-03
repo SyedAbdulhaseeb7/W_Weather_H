@@ -1,0 +1,164 @@
+/* General Reset */
+body, h1, h3, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centering and Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background for a modern look */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Card Container */
+.card {
+  width: 480px;
+  padding: 30px 25px;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+  text-align: center;
+  border: 1px solid #e0e0e0; /* Light border to define card edges */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.hed {
+  margin-bottom: 25px;
+}
+
+.hed h1 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.hed h3 {
+  font-size: 14px;
+  color: #777;
+  font-weight: normal;
+}
+
+/* Input Field */
+.in8put {
+  width: calc(100% - 32px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #333; /* Dark text color for input */
+  background-color: #f9f9f9; /* Slightly off-white for subtle contrast */
+  transition: border-color 0.3s ease;
+}
+
+.in8put:focus {
+  border-color: #000000; /* Blue border on focus for accessibility */
+  outline: none;
+}
+
+/* Button */
+.btn {
+  width: 300px;
+  height: 7vh;
+  background-color: #000000; /* Professional blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+text-align: center;
+  display: flex;
+  align-items: center;
+position: relative;
+left: 15%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #c97909; /* Darker blue on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Icons and Weather Info */
+.gicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.temp, .cloud, .location {
+  background-color: #fafafa; /* Light background for weather info */
+  padding: 15px;
+  width: 85%;
+  border-radius: 10px;
+
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.msg {
+  font-size: 15px;
+  color: #555; /* Slightly lighter text color for info */
+}
+
+/* Hover Effects for Weather Info */
+.temp:hover, .cloud:hover, .location:hover {
+  background-color: #f0f0f0; /* Slightly darker on hover for effect */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+.g{
+  color: black;
+  font-size: larger;
+}
+/* Responsive Design */
+@media (max-width: 400px) {
+  .card {
+    width: 305px;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn {
+  width: 217px;
+  height: 7vh;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 15%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+  .input {
+    width: calc(100% - 20px);
+  }
+}
